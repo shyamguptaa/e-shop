@@ -15,7 +15,7 @@ function Navbar() {
                     <a href='/' className='nav-link'>Home</a>
                   </li>
                   <li className='nav-item'>
-                    <a href='/products' className='nav-link'>Products</a>
+                    <a href='/product' className='nav-link'>Products</a>
                   </li>
                 </ul>
                 <div className='buttons text-center'>
