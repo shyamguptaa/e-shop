@@ -1,7 +1,7 @@
 // add items
 
 export const addItem=(product)=>{
-    console.log(product)
+    console.log(product,"Add Item called ")
     return{
         type:"ADDITEM",
         data:product
@@ -10,6 +10,7 @@ export const addItem=(product)=>{
 // remove items
 
 export const removeItem=(product)=>{
+    console.log(product,"remove Item called ")
     return{
         type:"REMOVEITEM",
         data:product
