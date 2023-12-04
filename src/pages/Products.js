@@ -43,18 +43,18 @@ function Products() {
                         className='card-img-top p-2'
                         src={item.image}
                         alt='card_image'
-                        height={280}
+                        height={380}
                       />
                       <div className='card-body'>
-                        <h5 className="card-title">{item.title.substring(0, 15)}</h5>
-                        <p className="card-text">{item.description.substring(0, 50)}</p>
+                        <h5 className="card-title">{item.title.substring(0, 15)}....</h5>
+                        <p className="card-text">{item.description.substring(0, 50)}....</p>
                       </div>
                       <ul className="list-group list-group-flush">
                         <li className="list-group-item">₹ {item.price}</li>
                       </ul>
                       <div className="card-body">
 
-                        <Link to={`/product/${item.id}`} className="btn btn-outline-secondary m-2">Buy Now link</Link>
+                        <Link to={`/product/${item.id}`} className="btn btn-outline-secondary m-2">Buy Now</Link>
                         <button onClick={() => addProduct(item)} className="btn btn-outline-secondary m-2">
                           Add to cart
                         </button>

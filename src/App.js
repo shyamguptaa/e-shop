@@ -20,24 +20,24 @@ import store from "./redux/store";
 function App() {
   return (
     <>
-    <Provider  store={store}>
-      <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/register" element={<Register />} />
-          <Route exact path="/cart" element={<Cart />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/product" element={<Products />} />
-          <Route exact path="/product/:id" element={<Product />} />
-          <Route exact path="/checkout" element={<CheckOut />} />
-          <Route exact path="/product/*" element={<PageNotFound />} />
-          <Route exact path="*" element={<PageNotFound />} />
-        </Routes>
-      </BrowserRouter>
-      <Footer />
+      <Provider store={store}>
+        <Navbar />
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/register" element={<Register />} />
+            <Route exact path="/cart" element={<Cart />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/product" element={<Products />} />
+            <Route exact path="/product/:id" element={<Product />} />
+            <Route exact path="/checkout" element={<CheckOut />} />
+            <Route exact path="/product/*" element={<PageNotFound />} />
+            <Route exact path="*" element={<PageNotFound />} />
+          </Routes>
+        </BrowserRouter>
+        <Footer />
       </Provider>
     </>
   );
